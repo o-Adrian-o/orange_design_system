@@ -48,4 +48,8 @@ extension SpaceExtension on double {
   Widget asWidget() {
     return Container(margin: EdgeInsets.all(this));
   }
+
+  EdgeInsets get edgeHorizontal => EdgeInsets.symmetric(horizontal: this);
+  EdgeInsets get edgeVertical => EdgeInsets.symmetric(horizontal: this);
+  EdgeInsets get edgeAll => EdgeInsets.all(this);
 }
